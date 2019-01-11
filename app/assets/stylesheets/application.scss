@@ -1,0 +1,177 @@
+//@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  //margin-top: 70px;
+  //padding-top: 70px;
+  //background-color: rgb(250, 250, 250);
+  background-color: #fff;
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+section {
+  //background-color: #fff;
+  //padding-top: 90px;
+  //margin-top: 90px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: #f5f5f5;
+}
+
+.margin-vertical-none {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+/* .recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+
+.recipe {
+  background-color: none;
+  border-bottom: 1px solid #ececec;
+  //margin-bottom: 20px;
+  //width: 30%;
+  //min-width: 300px;
+
+  .thumbnail {
+    padding: 32px;
+    background-color: #fff;
+    //border-radius: 5px;
+    //border: 1px solid #007BFF;
+    //box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+  }
+}
+
+.container {
+  max-width: 1272px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.wrapper {
+  background-color: #fff;
+  max-width: 1272px;
+  padding: 32px;
+  margin: 0 auto;
+}
+
+.navbar {
+  border-bottom: 5px solid red;
+  border-radius: 0px;
+  //display: block;
+  //position: fixed;
+  //top: 0;
+  //width: 100%;
+  z-index: 1000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 17px;
+  font-weight: 600;
+  color: #2e86de;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.slogan {
+  margin-top: -20px;
+  //background-image: url("food.jpg");
+  //background-repeat: no-repeat;
+  //background-attachment: fixed;
+  //background-size: cover;
+  //background-position: center;
+  color: #fff;
+  text-align: center;
+  //min-height: 500px;
+  /*h1 {
+    font-size: 60px;
+    font-weight: 400;
+  }*/
+
+  /*h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 500px;
+  }*/
+
+  img {
+    //margin-top: 20px;
+    //max-width: 1272px;
+    //max-height: 500px;
+    //width: 100%;
+  }
+}
+
+.get-started {
+  background-image: url("MealEasy-pattern-wallpaper.png");
+  background-repeat: no-repeat;
+  background-position: center fixed;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: -50px;
+  //background-color: #ff6b6b;
+
+  .get-started-box {
+    background-color: rgba(0,0,0,0.6);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 700px;
+  }
+
+  h2 {
+    font-weight: 600;
+    color: #fff;
+    //text-shadow: 1px 1px #8585856c;
+  }
+
+  .btn {
+    margin-top: 20px;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 800;
+    //box-shadow: 5px 10px #8585856c;
+  }
+}
+
+footer {
+  text-align: center;
+  //background-color: rgb(250, 250, 250);
+  background-color: #eaeaea;
+  border-top: 1px solid #ececec;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  //margin-top: -15px;
+  //margin-top: 60px;
+  font-size: 12px;
+
+  .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2e86de;
+  }
+}

@@ -10,13 +10,17 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
+gem 'mini_racer'
 gem 'sass-rails', '~> 5.0'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'jquery-rails'
+gem 'popper_js', '~> 1.14.5'
+gem 'bootstrap', '~> 4.1.3'
+#gem 'bootstrap-sass', '~> 3.3.7'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'mini_racer', platforms: :ruby
-
 gem 'nokogiri', '1.6.8.1'
+gem 'clearance', '~> 1.15.1'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -39,6 +43,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'minitest-rails'
+  gem 'factory_girl_rails'
+  gem 'faker'
 end
 
 group :development do
