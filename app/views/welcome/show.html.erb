@@ -1,17 +1,16 @@
-   <div class="slogan">
-      <!-- <h2><i>No More "What's For Dinner" Speculations. We've Got You Covered.</i></h2> -->
-      <!-- <h3>We've Got You Covered.</h3> -->
-      <%= image_tag "MealEasy-slide.png", class: "img-fluid", text: "MealEasy Healthy Food Photography" %>
-    </div>
+    <div class="jumbotron jumbotron-fluid hero-banner">
+  <div class="container">
+    <h1 class="display-4">Take the thinking out of<br> "What's for dinner?"</h1>
+    <p class="lead">MealEasy is a simple, healthy, and delicious <b><i>free</i></b> way<br> to cook at home.</p>
+  </div>
+</div>
   
 
-<% if signed_in? %>
-<div>
-  <div class="get-started">
-  <div class="container get-started-box">
-  <h2>Let's Get Started by Creating a...</h2>
-        <%= link_to "New Recipe", new_recipe_path, class: "btn btn-primary" %>
-        </div>
+
+  <div class="get-started vertical-center">
+  <div class="container">
+  <h1>Live your best life.</h1>
+  <p>Eat better, take back your stressful evenings, and <b>feel great about yourself.</b></p>
+        <%= link_to "Create New Recipe", new_recipe_path, class: "btn btn-success" %>
     </div>
-    </div>
-    <% end %>
+   

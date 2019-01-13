@@ -1,4 +1,4 @@
-<div class="wrapper">
+<!-- <div class="wrapper">
 <div class="title-container">
   <h1>Meal Plan: <%= @meal_plan %></h1>
 </div>
@@ -20,3 +20,28 @@
   </ul>
 </div>
 </div>
+--> 
+
+
+
+<div class="container-fluid title-wrapper">
+  <h1>Meal Plan: <%= @meal_plan %></h1>
+  <p>Here's a few things you can do..</p>
+  <%= link_to "Edit Meal Plan", edit_meal_plan_path(@meal_plan), class: "btn btn-secondary" %></li>
+  <%= link_to "Delete", meal_plan_path(@meal_plan), class: "btn btn-danger", data: {
+      confirm: "Are you sure you want to delete meal plan: #{@meal_plan}?",
+    }, method: :delete %>
+</div>
+<div class="custom-wrapper">
+<div class="container">
+<div class="meal-plan-content">
+  <ul class="meals">
+  <% @meal_plan.meals.each do |meal| %>
+    <li class="meal">
+      <%= localize(meal.date) %> - <%= link_to meal.recipe, recipe_path(meal.recipe) %>
+    </li>
+  <% end %>
+</ul>
+</div>
+</div>
+      </div>

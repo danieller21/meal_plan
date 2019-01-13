@@ -2,23 +2,161 @@
 @import "bootstrap";
 
 body {
-  //margin-top: 70px;
-  //padding-top: 70px;
-  //background-color: rgb(250, 250, 250);
   background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
 
   a:hover {
     text-decoration: none;
   }
 }
 
+h1 {
+  font-family: 'Roboto Slab', serif !important;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif !important;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif !important;
+}
+
+h4 {
+  font-family: 'Roboto Slab', serif !important;
+}
+
+h5 {
+  font-family: 'Roboto Slab', serif !important;
+}
+
+.custom-wrapper {
+  background-color: #f8f8f3;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: -150px;
+
+  h1, h2, h3, h4, h5 {
+    color: #666;
+  }
+}
+
+.flash {
+  margin-top: 20px;
+}
+
+.panel-default {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+
+  input, label {
+    margin-left: 10px;
+  }
+
+  input[type="submit"] {
+    background: #908766;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background: #666666;
+  }
+}
+
+#clearance {
+  margin-top: 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  form {
+    width: 400px;
+  }
+
+  h2 {
+    font-weight: 700;
+  }
+
+  input {
+    box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+  }
+
+  .text-field {
+    margin-bottom: 20px;
+  }
+
+  .password-field {
+    margin-bottom: 20px;
+  }
+
+  input[type="email"], input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #888;
+}
+
+ input[type="submit"] {
+  background: #908766;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #666666;
+}
+
+  label {
+    color: #908766;
+  }
+
+  a {
+    color: #666;
+  }
+}
+
+.btn-success {
+  background-color: #6ecd31;
+  border-color: #6ecd31;
+}
+
+.btn-danger {
+  background-color: #ff4442;
+  border-color: #ff4442;
+}
+
+.btn-secondary {
+  background-color: #908766;
+  border-color: #908766;
+}
+
+.btn-secondary:hover {
+  background-color: #666666;
+}
+
 section {
-  //background-color: #fff;
-  //padding-top: 90px;
-  //margin-top: 90px;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  background-color: #f5f5f5;
+  margin-top: -20px;
+  padding-bottom: 150px;
 }
 
 .margin-vertical-none {
@@ -26,7 +164,7 @@ section {
   margin-bottom: 0px;
 }
 
-.title-container {
+/*.title-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,27 +173,57 @@ section {
   h1 {
     margin: 0;
   }
+}*/
+
+.title-wrapper {
+  background-color: #222;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
-/* .recipes {
+.recipes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-} */
+} 
 
 .recipe {
-  background-color: none;
-  border-bottom: 1px solid #ececec;
-  //margin-bottom: 20px;
-  //width: 30%;
-  //min-width: 300px;
+  background-color: #fff;
+  width: 30%;
+  min-width: 300px;
+  border: 1px solid #e6e6d4;
+  margin-bottom: 30px;
 
   .thumbnail {
-    padding: 32px;
+    padding: 10px;
     background-color: #fff;
-    //border-radius: 5px;
-    //border: 1px solid #007BFF;
-    //box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+
+    h4 a {
+      font-family: 'Roboto Slab', serif;
+      color: #666666;
+    }
+
+    p {
+      color: #908766;
+    }
+  }
+}
+
+.recipe-content {
+  h2 {
+    color: #666;
+  }
+
+  p {
+    color: #908766;
+  }
+}
+
+.meal-plan-content {
+  a {
+    color: #908766;
   }
 }
 
@@ -65,113 +233,124 @@ section {
   padding-right: 32px;
 }
 
-.wrapper {
-  background-color: #fff;
-  max-width: 1272px;
-  padding: 32px;
-  margin: 0 auto;
-}
-
 .navbar {
-  border-bottom: 5px solid red;
-  border-radius: 0px;
-  //display: block;
-  //position: fixed;
-  //top: 0;
-  //width: 100%;
+  box-shadow: 0 0 2px rgba(6,8,8,0.15);
   z-index: 1000;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+}
+
 .navbar-light .navbar-nav .nav-link {
-  font-size: 17px;
-  font-weight: 600;
-  color: #2e86de;
+  font-size: 14px;
+  font-weight: normal;
+  border-bottom: 2px solid #fff;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #6ecd31 !important;
+}
+
+.navbar-light .navbar-nav .sign-up-link {
+  color: #fff;
+  background-color: #6ecd31;
+  border-radius: 5px;
+}
+
+.navbar-light .navbar-nav .sign-up-link:hover {
+  color: #fff;
 }
 
 .navbar-brand {
-  text-transform: uppercase;
   font-weight: 800;
   font-size: 30px;
 }
 
-.slogan {
-  margin-top: -20px;
-  //background-image: url("food.jpg");
-  //background-repeat: no-repeat;
-  //background-attachment: fixed;
-  //background-size: cover;
-  //background-position: center;
-  color: #fff;
-  text-align: center;
-  //min-height: 500px;
-  /*h1 {
-    font-size: 60px;
-    font-weight: 400;
-  }*/
+.hero-banner {
+  background-image: url("MealEasy-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 675px;
+  margin-bottom: 0px;
 
-  /*h2 {
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 500px;
-  }*/
-
-  img {
-    //margin-top: 20px;
-    //max-width: 1272px;
-    //max-height: 500px;
-    //width: 100%;
+  .container {
+    max-width: 1425px;
+    margin-top: 150px;
   }
+  
+  h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+  }
+  .lead {
+    font-size: 30px;
+    color: rgb(78, 78, 78);
+  
+    i {
+      color: #212529;
+      font-weight: 800;
+    }
+  } 
 }
 
 .get-started {
-  background-image: url("MealEasy-pattern-wallpaper.png");
+  background-image: url("MealEasy-better-life.jpg");
   background-repeat: no-repeat;
-  background-position: center fixed;
+  background-position: center;
+  
+  min-height: 675px;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-bottom: -50px;
-  //background-color: #ff6b6b;
+  margin-top: -167px;
+  margin-bottom: -315px;
+  //padding-top: 170px;
 
-  .get-started-box {
-    background-color: rgba(0,0,0,0.6);
-    padding-top: 50px;
-    padding-bottom: 50px;
-    max-width: 700px;
+  h1 {
+    font-size: 56px;
+    padding: 0 10px 0 10px;
   }
 
-  h2 {
-    font-weight: 600;
-    color: #fff;
-    //text-shadow: 1px 1px #8585856c;
+  p {
+    font-size: 28px;
+    color: #4e4e4e;
   }
 
-  .btn {
-    margin-top: 20px;
-    font-size: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 800;
-    //box-shadow: 5px 10px #8585856c;
+  p b {
+    color: #212529;
+    text-shadow: 2px 2px 4px #fff;
   }
 }
 
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 footer {
-  text-align: center;
-  //background-color: rgb(250, 250, 250);
-  background-color: #eaeaea;
-  border-top: 1px solid #ececec;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  //margin-top: -15px;
-  //margin-top: 60px;
-  font-size: 12px;
+  box-shadow: 0 0 2px rgba(6,8,8,0.15);
+  font-size: 14px;
+
+  p {
+    padding: 30px;
+
+    span a {
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    span a:hover {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
 
   .nav-link {
     font-size: 14px;
-    font-weight: 600;
-    color: #2e86de;
+    font-weight: 300;
   }
 }
