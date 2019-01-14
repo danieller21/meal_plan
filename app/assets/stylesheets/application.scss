@@ -63,7 +63,7 @@ h5 {
     color: #fff;
     cursor: pointer;
   }
-  
+
   input[type="submit"]:hover {
     background: #666666;
   }
@@ -86,15 +86,15 @@ h5 {
 
   input {
     box-sizing: border-box;
-  display: block;
-  width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
-  padding: 16px;
-  outline: 0;
-  font-family: inherit;
-  font-size: 0.95em;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
   }
 
   .text-field {
@@ -106,25 +106,25 @@ h5 {
   }
 
   input[type="email"], input[type="password"] {
-  background: #fff;
-  border-color: #bbb;
-  color: #555;
-}
+    background: #fff;
+    border-color: #bbb;
+    color: #555;
+  }
 
-input[type="email"]:focus, input[type="password"]:focus {
-  border-color: #888;
-}
+  input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #888;
+  }
 
- input[type="submit"] {
-  background: #908766;
-  border-color: transparent;
-  color: #fff;
-  cursor: pointer;
-}
+  input[type="submit"] {
+    background: #908766;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
 
-input[type="submit"]:hover {
-  background: #666666;
-}
+  input[type="submit"]:hover {
+    background: #666666;
+  }
 
   label {
     color: #908766;
@@ -164,17 +164,6 @@ section {
   margin-bottom: 0px;
 }
 
-/*.title-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-
-  h1 {
-    margin: 0;
-  }
-}*/
-
 .title-wrapper {
   background-color: #222;
   color: #fff;
@@ -187,7 +176,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-} 
+}
 
 .recipe {
   background-color: #fff;
@@ -283,7 +272,7 @@ section {
     max-width: 1425px;
     margin-top: 150px;
   }
-  
+
   h1 {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -291,24 +280,23 @@ section {
   .lead {
     font-size: 30px;
     color: rgb(78, 78, 78);
-  
+
     i {
       color: #212529;
       font-weight: 800;
     }
-  } 
+  }
 }
 
 .get-started {
   background-image: url("MealEasy-better-life.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  
+
   min-height: 675px;
   text-align: center;
   margin-top: -167px;
   margin-bottom: -315px;
-  //padding-top: 170px;
 
   h1 {
     font-size: 56px;

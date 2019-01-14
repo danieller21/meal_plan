@@ -1,69 +1,31 @@
-<!-- <div class="container">
-<div class="title-container">
-  <h1>Meal Plans</h1>
-  <%= link_to "New Meal Plan", new_meal_plan_path, class: "btn btn-primary" %>
-</div>
-
-<div class="wrapper">
-<% if @current_meal_plan.present? %>
-  <h2>Current Meal Plan</h2>
-  <div>
-    <ul class="meals">
-      <% @current_meal_plan.meals.each do |meal| %>
-        <li class="meal">
-          <%= meal.date %> - <%= link_to meal.recipe, recipe_path(meal.recipe) %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
-
-<h3>All Meal Plans</h3>
-
-<% @meal_plans.each do |meal_plan| %>
-  <div class="meal_plan">
-    <%= link_to meal_plan, meal_plan_path(meal_plan) %>
-  </div>
-<% end %>
-</div>
-</div> -->
-
-<!-- <div class="actions">
-  <%= link_to "New Meal Plan", new_meal_plan_path, class: "btn btn-default" %>
-</div> -->
-
-
-
-
-
 <div class="container-fluid title-wrapper">
   <h1>Meal Plans</h1>
   <p>Your busy weeknights are about to be so much easier.<br> We've made meal planning and cooking as simple as getting takeout.</p>
   <%= link_to "Create New Meal Plan", new_meal_plan_path, class: "btn btn-success" %>
 </div>
 <div class="custom-wrapper">
-<div class="container">
-<div class="meal-plan-content">
+  <div class="container">
+    <div class="meal-plan-content">
       <% if @current_meal_plan.present? %>
-  <h2>Current Meal Plan</h2>
-  <div>
-    <ul class="meals">
-      <% @current_meal_plan.meals.each do |meal| %>
-        <li class="meal">
-          <%= meal.date %> - <%= link_to meal.recipe, recipe_path(meal.recipe) %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
-
-<h3>All Meal Plans</h3>
-
-<% @meal_plans.each do |meal_plan| %>
-  <div class="meal_plan">
-    <%= link_to meal_plan, meal_plan_path(meal_plan) %>
-  </div>
-<% end %>
-</div>
-</div>
+      <h2>Current Meal Plan</h2>
+      <div>
+        <ul class="meals">
+          <% @current_meal_plan.meals.each do |meal| %>
+          <li class="meal">
+            <%= meal.date %> - <%= link_to meal.recipe, recipe_path(meal.recipe) %>
+          </li>
+          <% end %>
+        </ul>
       </div>
+      <% end %>
+
+      <h3>All Meal Plans</h3>
+
+      <% @meal_plans.each do |meal_plan| %>
+      <div class="meal_plan">
+        <%= link_to meal_plan, meal_plan_path(meal_plan) %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

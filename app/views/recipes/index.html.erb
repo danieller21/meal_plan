@@ -4,25 +4,25 @@
   <%= link_to "Create New Recipe", new_recipe_path, class: "btn btn-success" %>
 </div>
 <div class="custom-wrapper">
-<div class="container">
-<div class="recipes">
-  <% @recipes.each do |recipe| %>
-    <div class="recipe">
-      <div class="thumbnail">
-        <div class="caption">
-          <h4><%= link_to truncate(recipe.name, length: 25), recipe_path(recipe) %></h4>
-          <p><%= truncate(recipe.description, length: 125) %></p>
-          <p>
-            <%= link_to "Edit", edit_recipe_path(recipe), class: "btn
-            btn-secondary" %>
-            <%= link_to "Delete", recipe_path(recipe), class: "btn btn-danger", data: {
-              confirm: "Are you sure you want to delete: #{recipe.name}?",
-            }, method: :delete %>
-          </p>
+  <div class="container">
+    <div class="recipes">
+      <% @recipes.each do |recipe| %>
+      <div class="recipe">
+        <div class="thumbnail">
+          <div class="caption">
+            <h4><%= link_to truncate(recipe.name, length: 25), recipe_path(recipe) %></h4>
+            <p><%= truncate(recipe.description, length: 125) %></p>
+            <p>
+              <%= link_to "Edit", edit_recipe_path(recipe), class: "btn
+              btn-secondary" %>
+              <%= link_to "Delete", recipe_path(recipe), class: "btn btn-danger", data: {
+                confirm: "Are you sure you want to delete: #{recipe.name}?",
+              }, method: :delete %>
+            </p>
+          </div>
         </div>
       </div>
+      <% end %>
     </div>
-  <% end %>
-</div>
-</div>
+  </div>
 </div>
